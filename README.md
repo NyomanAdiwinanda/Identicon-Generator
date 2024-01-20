@@ -1,21 +1,35 @@
-# Identicon
+# Identicon Generator
 
-**TODO: Add description**
+Generate identicon image from an input string
 
-## Installation
+## Demo
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `identicon` to your list of dependencies in `mix.exs`:
+Inside your parent folder terminal:
 
-```elixir
-def deps do
-  [
-    {:identicon, "~> 0.1.0"}
-  ]
-end
+- Install the dependencies
+
+```bash
+mix deps.get
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/identicon>.
+- Run elixir interactive shell
 
+```bash
+iex -S mix
+```
+
+- Generate the image
+
+```iex
+Identicon.main("adi")
+```
+
+the generated image will be saved inside parent folder
+
+## Docs
+
+run `mix docs` and go to `doc/index.html` to see the project documentation
+
+## Tests
+
+run `mix test` to run testing
